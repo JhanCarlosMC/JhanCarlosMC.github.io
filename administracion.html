@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion</title>
+    <link rel="stylesheet" href="style/stylesIndex.css">
+</head>
+
+<body>
+    <div class="body">
+
+        <a href="index.html">
+            <h1>Agregar Nuevo Producto</h1>
+
+        </a>
+
+        <form id="formulario-productos">
+            <fieldset>
+                <!-- nombre, descripción, imagen, cantidad disponible y precio. -->
+                <legend>Formulario Productos</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre"><br>
+
+                <label for="descripcion">Descripcion: </label>
+                <input type="text" name="descripcion" id="descripcion"><br>
+
+                <label for="imagen">Imagen: </label>
+                <input type="file" name="imagen" id="imagen" accept="image/*"><br>
+
+                <label for="cantidad">Cantidad: </label>
+                <input type="number" name="cantidad" id="cantidad"><br>
+
+                <label for="precio">Precio: </label>
+                <input type="number" name="precio" id="precio"><br><br>
+
+                <input type="submit" value="Agregar Producto">
+
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    
+    <div id="contenedor-productos">
+        <h1>Productos</h1>
+    </div>
+
+    <script src="js/administracion.js"></script>
+</body>
+
+</html>

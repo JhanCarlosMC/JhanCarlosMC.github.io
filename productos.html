@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style/stylesIndex.css">
+</head>
+
+<body>
+
+    <a href="index.html">
+        <h1>Productos</h1>
+
+    </a>
+
+    <div id ="lista-productos" class="lista-productos">
+        <div class="producto">
+            <h4>Tenis</h4>
+            <img src="" alt="Imagen de tenis">
+            <p>Precio: 120000</p>
+            <p id="dispo-1">Disponibilidad: 5</p>
+
+            <button onclick="agregarProductoCarrito('1')">Agregar al Carrito</button>
+        </div>
+    </div>
+
+
+    <h2>Carrito de compras</h2>
+        <div id="productos-carrito">
+
+        </div>
+    
+
+    <script src="js/producto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+@import 'header.css';
+@import 'banner.css';
+@import 'footer.css';
+
+/*Estilos body*/
+body {
+    margin: 10px;
+}
+
+.lista-productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.body{
+    background-color: #6EA4E6;
+}

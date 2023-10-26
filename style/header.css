@@ -1,0 +1,68 @@
+/*Estilos Navegacion Header*/
+.header {
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    padding: 10px;
+
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu__item {
+    padding: 10px 20px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    width: max-content;
+    height: max-content;
+}
+
+.menu__item:hover {
+    background-color: rgb(86, 86, 86);
+}
+
+#nombre-usuario{
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+
+    .menu__list {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0px;
+
+        display: block;
+        position: absolute;
+        background-color: rgb(26, 26, 26);
+        color: #fff;
+        text-align: center;
+
+        top: 48px;
+        right: 0px;
+    }
+
+    .menu-mobile__line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px auto;
+    }
+
+    .menu-mobile:hover+.menu__list {
+        display: block;
+    }
+
+    .menu__list:not(:hover) {
+        display: none;
+    }
+}
